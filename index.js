@@ -21,13 +21,13 @@ class Driver {
   passengers() {
     let driverTrips = this.trips();
 
-    let collection = store.passengers.filter(passenger => {
+    return store.passengers.filter(passenger => {
       console.log(passenger)
       return driverTrips.some(function(el) {
         return el.passengerId === passenger.id
       });
     });
-    console.log(collection)
+
   }
 
 
