@@ -27,10 +27,7 @@ class Driver {
         return el.passengerId === passenger.id
       });
     });
-
   }
-
-
 }
 
 class Passenger {
@@ -45,6 +42,17 @@ class Passenger {
     return store.trips.filter(trip => {
       return trip.passengerId === this.id
     })
+  }
+
+  passengers() {
+    let passengerTrips = this.trips();
+
+    return store.drivers.filter(driver => {
+      console.log(driver)
+      return passengerTrips.some(function(el) {
+        return el.driverId === driver.id
+      });
+    });
   }
 }
 
