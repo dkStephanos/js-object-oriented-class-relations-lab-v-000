@@ -26,10 +26,8 @@ class Driver {
       return driverTrips.some(function(el) {
         return el.passengerId === passenger.id
       }
-    })
-    arr.some(function (el) {
-    return el.username === name;
-  });
+    });
+
     console.log(collection)
   }
 
