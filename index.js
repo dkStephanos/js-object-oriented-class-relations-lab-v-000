@@ -1,6 +1,6 @@
-driverId = 0;
+let driverId = 0;
 
-store.drivers = [];
+let store = {drivers: [], items: []}
 
 class Driver {
   constructor(name) {
