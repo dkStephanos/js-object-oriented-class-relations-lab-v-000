@@ -22,6 +22,7 @@ class Driver {
     let driverTrips = this.trips();
 
     let collection = store.passengers.filter(passenger => {
+      console.log(passenger)
       return driverTrips.passengerId === passenger.id
     })
 
