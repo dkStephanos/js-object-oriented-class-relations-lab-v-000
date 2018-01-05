@@ -18,6 +18,14 @@ class Driver {
     })
   }
 
+  passengers() {
+    let driverTrips = trips();
+
+    return store.passengers.filter(passenger => {
+      return driverTrips.passengerId === this.id
+    })
+  }
+
 
 }
 
