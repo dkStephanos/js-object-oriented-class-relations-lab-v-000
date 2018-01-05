@@ -24,6 +24,7 @@ class Driver {
     let collection = store.passengers.filter(passenger => {
       console.log(driverTrips)
       console.log(this)
+      console.log(store.passengers)
       return driverTrips.passengerId === this.id
     })
 
