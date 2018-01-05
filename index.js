@@ -26,7 +26,7 @@ class Driver {
       console.log(this)
       console.log(store.passengers)
       return driverTrips.passengerId === this.id
-    })
+    }.bind(this))
 
     console.log(collection)
   }
