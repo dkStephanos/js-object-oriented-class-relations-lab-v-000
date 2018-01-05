@@ -25,8 +25,7 @@ class Driver {
       console.log(passenger)
       return driverTrips.some(function(el) {
         return el.passengerId === passenger.id
-      }
-    });
+      });
 
     console.log(collection)
   }
