@@ -16,7 +16,7 @@ class Driver {
     return store.trips.filter(trip => {
       console.log(trip)
       console.log(this)
-      return trip.id === this.id
+      return trip.driverId === this.id
     })
   }
 }
