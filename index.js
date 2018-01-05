@@ -13,8 +13,8 @@ class Driver {
   }
 
   trips(){
-    return store.items.filter(item => {
-      return item.userId === this.id
+    return store.trips.filter(trip => {
+      return trip.id === this.id
     })
   }
 }
