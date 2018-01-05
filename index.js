@@ -21,11 +21,11 @@ class Driver {
   passengers() {
     let driverTrips = this.trips();
 
-    passengers = store.passengers.filter(passenger => {
+    let collection = store.passengers.filter(passenger => {
       return driverTrips.passengerId === this.id
     })
 
-    console.log(passengers)
+    console.log(collection)
   }
 
 
