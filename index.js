@@ -44,7 +44,7 @@ class Passenger {
     })
   }
 
-  passengers() {
+  drivers() {
     let passengerTrips = this.trips();
 
     return store.drivers.filter(driver => {
