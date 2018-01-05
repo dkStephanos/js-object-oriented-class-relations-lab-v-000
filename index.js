@@ -23,9 +23,13 @@ class Driver {
 
     let collection = store.passengers.filter(passenger => {
       console.log(passenger)
-      return driverTrips.passengerId === passenger.id
+      return driverTrips.some(function(el) {
+        return el.passengerId === passenger.id
+      }
     })
-
+    arr.some(function (el) {
+    return el.username === name;
+  });
     console.log(collection)
   }
 
