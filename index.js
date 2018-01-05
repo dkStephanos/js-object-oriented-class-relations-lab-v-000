@@ -36,7 +36,7 @@ class Trip {
       console.log(driver)
       console.log(this)
       return driver.id === this.driverId
-    })
+    }.bind(this))
   }
 
   passenger(){
